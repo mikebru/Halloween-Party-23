@@ -27,11 +27,11 @@ args = parser.parse_args()
 client = udp_client.SimpleUDPClient(args.ip, args.port)
 
 # Load a model
-model = YOLO('yolov8n-seg.pt')  # load an official detection model
+model = YOLO('yolov8n.pt')  # load an official detection model
 
 
 # Track with the model
-results = model.track(source="0", classes=0, show=True ,stream=True, persist=True)
+results = model.track(source="2", classes=0, show=True ,stream=True, persist=True)
 
 		
 # Process results list
