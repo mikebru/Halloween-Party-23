@@ -31,7 +31,7 @@ model = YOLO('yolov8n.pt')  # load an official detection model
 
 
 # Track with the model
-results = model.track(source="1", classes=0, show=True ,stream=True, persist=True)
+results = model.track(source="4", classes=0, show=True ,stream=True, persist=True)
 
 		
 # Process results list
